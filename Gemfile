@@ -13,10 +13,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-sass'
 
-group :production do
-  gem 'pg'
-end
 
 group :development, :test do
   gem 'sqlite3'
 end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
